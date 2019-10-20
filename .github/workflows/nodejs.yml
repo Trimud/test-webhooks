@@ -8,11 +8,12 @@ on:
 jobs:
   test:
     container:
-      image: vali0/node-grunt-gulp:8.9.4 
+      image: vali0/node-grunt-gulp:8.9.4
 
     runs-on: ubuntu-latest
 
     steps:
     - name: Run test script
       run: |
+        npm i
         npm test
