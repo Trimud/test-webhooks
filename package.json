@@ -1,0 +1,17 @@
+{
+	"name": "test-webhooks",
+	"version": "0.0.1",
+	"main": "index.html",
+	"author": "Yuriy Boev",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"test": "./node_modules/.bin/eslint test.js"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "^6.5.1",
+		"eslint-config-airbnb-base": "^14.0.0",
+		"eslint-plugin-import": "^2.18.2"
+	}
+}
