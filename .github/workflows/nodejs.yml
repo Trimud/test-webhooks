@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Run test script
-      run: |
-        npm i
-        npm test
+      - name: Install dependencies
+        run: npm i
+      - name: Run test script
+        run: npm test
