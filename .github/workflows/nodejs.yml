@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: Trimud/osf-jira-webhooks
+      - name: OSF JIRA Webhooks
+        run: npm i
       - uses: actions/checkout@v1
       - name: Run test script
         run: |
