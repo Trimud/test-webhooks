@@ -13,9 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Log files
-        run: ls -la
-      - name: Install dependencies
-        run: npm i
+      - uses: actions/checkout@v1
       - name: Run test script
-        run: npm test
+        run: |
+          npm i
+          npm test
