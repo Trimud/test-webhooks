@@ -14,8 +14,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+        with:
+          repository: Trimud/osf-jira-webhooks
+          token: ${{ secrets.ACCESS_TOKEN }
+      - uses: actions/checkout@v1
       - name: Run test script
         run: |
-          $ git clone https://Trimud:${{ secrets.GITHUB_TOKEN }}@github.com/Trimud/osf-jira-webhooks.git
+          # $ git clone https://Trimud:${{ secrets.GITHUB_TOKEN }}@github.com/Trimud/osf-jira-webhooks.git
           npm i
           npm test
