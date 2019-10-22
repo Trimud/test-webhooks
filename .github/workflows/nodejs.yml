@@ -13,11 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: Trimud/osf-jira-webhooks@v1
-      - name: OSF JIRA Webhooks
-        run: npm i
       - uses: actions/checkout@v1
       - name: Run test script
         run: |
+          # git clone git-clone yboev$ git clone https://Trimud:49c7e92260790c3b2ee6e7df21753245222eab18@github.com/Trimud/osf-jira-webhooks.git
+          ${{ secrets.GITHUB_TOKEN }}
           npm i
           npm test
